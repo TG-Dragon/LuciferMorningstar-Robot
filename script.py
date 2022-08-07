@@ -1,9 +1,9 @@
 class Script(object):
     START_TXT = """<b>Hello 👋 {},</b>
 
-<b>I Am Not Only <a href="https://t.me/MovieHub_Robot">Movie Hub Bot</a> To Assist You But Also Employed At <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> Group By <a href="https://t.me/hellodragan">Dragon</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data</b> 😉
+<b>I Am Not Only <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a> To Assist You But Also Employed At <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> Group By <a href='https://t.me/MOVIE_HOUSE11'>Htan Yoj</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉</b>
 
-<b>Better You Click Below & Join <a href="https://t.me/+Rw47iXFdBF84YTNl">Movie Hub</a> & Feel The Experience Of Downloading Unlimited Movies/Series</b> ✅
+<b>Better You Click Below & Join <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> & Feel The Experience Of Downloading Unlimited Movies/Series ✅</b>
 
 <b>For More Information Click ℹ️ Help</b>"""
     
@@ -19,39 +19,29 @@ class Script(object):
 ➥ Bot Server: <a href='https://heroku.com'>Heroku</a>
 ➥ Build Status: v2.0.1 [ Beta ]</b>"""
 
-    SOURCE_TXT = """<b>Source:</b>
-IMDb is a Open source project.
-Source: <a href='https://github.com/josprojects/tgmoviebot'>GitHub - Click here 👈</a>
+    MANUALFILTER_TXT = """<b>Filters</b>
 
-<b>DEVS:</b>
-- <a href='https://t.me/josprojects'>Jos Projects</a>
+- Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message.
 
-<b>SUPPORT GROUP</b>
-- <a href='https://t.me/+y53tWFUw6Q43NzE9'>Jos Movie Club</a>"""
-
-    MANUALFILTER_TXT = """<b>Filters
-
-- Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message.</b>
-
-<b>NOTE:
-1. Movie Hub should have admin privillage.
+<b>NOTE:</b>
+1. Unique Movies Bot should have admin privillage.
 2. Only admins can add filters in a chat.
-3. Alert buttons have a limit of 64 characters.</b>
+3. Alert buttons have a limit of 64 characters.
 
-<b>Commands and Usage:
+<b>Commands and Usage:</b>
 • /filter - add a filter in chat.
 • /filters - list all the filters of a chat.
 • /del - delete a specific filter in chat.
-• /delall - delete the whole filters in a chat (chat owner only).</b>"""
+• /delall - delete the whole filters in a chat (chat owner only)."""
 
-    BUTTON_TXT = """<b>Buttons
+    BUTTON_TXT = """<b>Buttons</b>
 
-- tgmoviebot support both url and alert inline buttons.</b>
+- Unique Movies Bot support both url and alert inline buttons.
 
-<b>NOTE:
+<b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Movie Hub supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format.</b>
+2. Unique Movies Bot supports buttons with any telegram media type.
+3. Buttons should be properly parsed as markdown format.
 
 <b>URL buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/josprojects)</code>
@@ -208,7 +198,7 @@ This module only works for my admins
 
 **You Have Not Subscribed To My Channel.** 
 
-**To View The File, Click On 📣 MOVIE TIME UPDATES 📣 Button & Join.** 
+**To View The File, Click On 📣 UNIQUE MOVIES UPDATES 📣 Button & Join.** 
 
 **Then Click On The 🔄 Refresh 🔄 Button To Receive The File ✅**"""
 
