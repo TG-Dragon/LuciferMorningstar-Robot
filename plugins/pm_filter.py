@@ -116,8 +116,8 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("🎬 Movies", url="https://t.me/+4yoDh0x8j80wOTVl"),
-                InlineKeyboardButton("Series 🎥", url="https://t.me/+iVePgxkxvQ0yOTBl")
+                InlineKeyboardButton("🎬 TK HD HUB 🎬", url="https://t.me/+4yoDh0x8j80wOTVl"),
+                InlineKeyboardButton("🎥 TK HP HUB 🎥", url="https://t.me/+iVePgxkxvQ0yOTBl")
             ])
 
     btn.insert(0, [
@@ -381,8 +381,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-                   InlineKeyboardButton('🆘🎬 Movies', url='https://t.me/+4yoDh0x8j80wOTVl'),
-                   InlineKeyboardButton('🆘🎥 Series', url='https://t.me/+oRO-NDOF4LU4ZjRl')
+                   InlineKeyboardButton('🆘🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                   InlineKeyboardButton('🆘🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
 
@@ -431,8 +431,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-                   InlineKeyboardButton('🆘🎬 Movies', url='https://t.me/+4yoDh0x8j80wOTVl'),
-                   InlineKeyboardButton('🆘🎥 Series', url='https://t.me/+oRO-NDOF4LU4ZjRl')
+                   InlineKeyboardButton('🆘🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                   InlineKeyboardButton('🆘🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
         
@@ -920,8 +920,8 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton("🎬 Movies", url="https://t.me/+4yoDh0x8j80wOTVl"),
-        InlineKeyboardButton("Series 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
+        InlineKeyboardButton("🎬 TK HD HUB 🎬", url="https://t.me/+4yoDh0x8j80wOTVl"),
+        InlineKeyboardButton("🎥 TK HP HUB 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
     ])
     btn.insert(0, [
         InlineKeyboardButton("🔔 Join Our Channel 🔔",url="https://t.me/+BixProBUQBo4MWM9")
