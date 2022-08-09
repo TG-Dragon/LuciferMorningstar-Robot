@@ -194,7 +194,7 @@ This module only works for my admins
 <b>Used Storage:</b> <code>{}</code> MiB
 <b>Free Storage:</b> <code>{}</code> MiB"""
 
-    FORCESUB_TXT = """**👋 Hello {mention},**
+    FORCESUB_TXT = """**👋 Hello {},**
 
 **You Have Not Subscribed To My Channel.** 
 
