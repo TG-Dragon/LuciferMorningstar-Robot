@@ -49,6 +49,10 @@ async def start(client, message):
             InlineKeyboardButton('About 😎', callback_data='about')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action("Typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEFgtBi8kasH1iGveTT-HI1ccUbk99fOQACFQEAAsiUZBRmRDCipxVsEykE") 
+        await asyncio.sleep(1)
+        await m.delete()        
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=Script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -90,6 +94,10 @@ async def start(client, message):
             InlineKeyboardButton('About 😎', callback_data='about')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action("Typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEFgtBi8kasH1iGveTT-HI1ccUbk99fOQACFQEAAsiUZBRmRDCipxVsEykE") 
+        await asyncio.sleep(1)
+        await m.delete()        
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=Script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -235,8 +243,8 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [[
-               InlineKeyboardButton('🆘🎬 TK HD HUB 🎬', url='https://t.me/+4yoDh0x8j80wOTVl'),
-               InlineKeyboardButton('🆘🎥 TK HP HUB 🎥', url='https://t.me/+oRO-NDOF4LU4ZjRl')
+               InlineKeyboardButton('🎬 TK HD HUB 🎬', url='https://t.me/+4yoDh0x8j80wOTVl'),
+               InlineKeyboardButton('🎥 TK HP HUB 🎥', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                ],[
                InlineKeyboardButton('🗑 Close File', callback_data='close_data')
                ]]
