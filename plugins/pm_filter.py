@@ -381,8 +381,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [[
-                   InlineKeyboardButton('🆘🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
-                   InlineKeyboardButton('🆘🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
+                   InlineKeyboardButton('🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                   InlineKeyboardButton('🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
 
@@ -431,8 +431,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [[
-                   InlineKeyboardButton('🆘🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
-                   InlineKeyboardButton('🆘🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
+                   InlineKeyboardButton('🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
+                   InlineKeyboardButton('🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
         
