@@ -194,13 +194,13 @@ This module only works for my admins
 <b>Used Storage:</b> <code>{}</code> MiB
 <b>Free Storage:</b> <code>{}</code> MiB"""
 
-    FORCESUB_TXT = """**👋 Hello {},**
+    FORCESUB_TXT = """**👋 Hello**
 
 **You Have Not Subscribed To My Channel.** 
 
-**To View The File, Click On 📣 UNIQUE MOVIES UPDATES 📣 Button & Join.** 
+**To View The File, Click On 📣 JOIN UPDATES CHANNEL Button & Join.** 
 
-**Then Click On The 🔄 Refresh 🔄 Button To Receive The File ✅**"""
+**Then Click On The 🔄 Try Again Button To Receive The File ✅**"""
 
     MEMES_TXT = """<b>Memes</b>
 
