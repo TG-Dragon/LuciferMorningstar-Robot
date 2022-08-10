@@ -9,7 +9,7 @@ class Script(object):
     
     HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<i><b>I can Guide You Through All Of <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.<i></b>"""
+<i><b>I can Guide You Through All Of <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</i></b>"""
 
     ABOUT_TXT = """<i><b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
