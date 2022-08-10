@@ -1,23 +1,23 @@
 class Script(object):
-    START_TXT = """<b>Hello 👋 {},</b>
+    START_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<b>I Am Not Only <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a> To Assist You But Also Employed At <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> Group By <a href='https://t.me/MOVIE_HOUSE11'>Htan Yoj</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉</b>
+<i><b>I Am Not Only <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a> To Assist You But Also Employed At <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> Group By <a href='https://t.me/MOVIE_HOUSE11'>Htan Yoj</a> So You Can't Get My Service By Adding Me To Your Group So Don't Waste Your Time & Data 😉</i></b>
 
-<b>Better You Click Below & Join <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> & Feel The Experience Of Downloading Unlimited Movies/Series ✅</b>
+<i><b>Better You Click Below & Join <a href='https://t.me/Its_unique_movies_adda'>𝐈𝐭'𝐬 𝐔𝐍𝐈𝐐𝐔𝐄 𝐌𝐎𝐕𝐈𝐄𝐒</a> & Feel The Experience Of Downloading Unlimited Movies/Series ✅</i></b>
 
-<b>For More Information Click ℹ️ Help</b>"""
+<i><b>For More Information Click ℹ️ Help</i></b>"""
     
-    HELP_TXT = """<b>Hello 👋 {},</b>
+    HELP_TXT = """<i><b>Hello 👋 {},</i></b>
 
-<b>I can Guide You Through All Of <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.</b>"""
+<i><b>I can Guide You Through All Of <a href='http://t.me/Itsuniquemovie_robot'>𝐈𝐭'𝐬 𝐔𝐧𝐢𝐪𝐮𝐞 𝐌𝐨𝐯𝐢𝐞𝐬 𝐁𝐨𝐭 𝟐.𝟎</a>'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules.<i></b>"""
 
-    ABOUT_TXT = """<b>➥ My name: {}
+    ABOUT_TXT = """<i><b>➥ My name: {}
 ➥ Creator: <a href='https://t.me/hellodragan'>Dragon</a>
 ➥ Library: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
 ➥ Language: Python 𝟹
 ➥ Data Base: <a href='https://www.mongodb.com/'>MongoDB</a>
 ➥ Bot Server: <a href='https://heroku.com'>Heroku</a>
-➥ Build Status: v2.0.1 [ Beta ]</b>"""
+➥ Build Status: v2.0.1 [ Beta ]</i></b>"""
 
     MANUALFILTER_TXT = """<b>Filters</b>
 
