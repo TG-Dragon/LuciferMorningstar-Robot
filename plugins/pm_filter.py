@@ -98,26 +98,25 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("🔙", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.U_NAME}"),
+             InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}"),
              InlineKeyboardButton(f"📃 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.U_NAME}"),
-             InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
-    else:
+            [InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+        )    
         btn.append(
-            [
-                InlineKeyboardButton("🔙", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton("Close 🗑️", callback_data="close_data")]
+        )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
             )
-    btn.insert(0,
+    else:
             [
                 InlineKeyboardButton("🎬 TK HD HUB 🎬", url="https://t.me/+4yoDh0x8j80wOTVl"),
-                InlineKeyboardButton("🎥 TK HP HUB 🎥", url="https://t.me/+iVePgxkxvQ0yOTBl")
+                InlineKeyboardButton("🎥 TK HP HUB 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
             ])
 
     btn.insert(0, [
@@ -909,16 +908,23 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
+            [InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+        )    
+        btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="Check PM", url=f"https://t.me/{temp.U_NAME}"),
-             InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton("Close 🗑️", callback_data="close_data")]
         )
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
+            )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1", callback_data="pages"),
-             InlineKeyboardButton(text="Check PM", url=f"https://t.me/{temp.U_NAME}")]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton("Close 🗑️", callback_data="close_data")]
         )
-
+        btn.append(
+                [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
+            )
     btn.insert(0, [
         InlineKeyboardButton("🎬 TK HD HUB 🎬", url="https://t.me/+4yoDh0x8j80wOTVl"),
         InlineKeyboardButton("🎥 TK HP HUB 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
@@ -962,7 +968,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10"
+        cap = f"<b>↪️ Requested:</b> {search}\n<b>👥 Requested by:</b> {message.from_user.mention}\n<b>📤 Uploaded To:</b> Unique Movie Server\n<b>🧑‍🔧 Get Support</b> ✔️ <a href='https://t.me/+JaqHJrYziA42Mzdl'>Tk Brand Series</a>\n<b>© Powered By:</b> <a href='https://t.me/Its_unique_movies_adda'>{message.chat.title}</a>\n\n<b>✍️ Note:</b> This message will be Auto-deleted after 20 minutes to avoid copyright issues."
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
@@ -978,12 +984,12 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/bf199f1fa6b42e95e5e7b.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo="https://telegra.ph/file/d1d42c047b72e7f036c34.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(1200)
             await fek.delete()
             await msg.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/bf199f1fa6b42e95e5e7b.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/d1d42c047b72e7f036c34.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(1200)
         await fuk.delete()
         await msg.delete()
