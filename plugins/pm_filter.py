@@ -117,10 +117,10 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton("🎬 TK HD HUB 🎬", url="https://t.me/+4yoDh0x8j80wOTVl"),
                 InlineKeyboardButton("🎥 TK HP HUB 🎥", url="https://t.me/+oRO-NDOF4LU4ZjRl")
-            ])
+            ]
 
     btn.insert(0, [
-        InlineKeyboardButton("Check PM", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")
     ])
     try:
         await query.edit_message_reply_markup(
