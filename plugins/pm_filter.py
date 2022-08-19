@@ -437,8 +437,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                    InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
                    ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
-   elif "scst" in query.data:
-       return await query.answer("""
+       elif "scst" in query.data:
+           return await query.answer("""
 » HERE IS THE SOLUTION «
 
 ☞ Send Me Rs.50/- Per Month With Payment Proof
