@@ -383,8 +383,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                    InlineKeyboardButton('🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
                    InlineKeyboardButton('🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
+                   InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+                   ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
-
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
@@ -433,8 +434,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
                    InlineKeyboardButton('🎬 TK HD HUB', url='https://t.me/+4yoDh0x8j80wOTVl'),
                    InlineKeyboardButton('🎥 TK HP HUB', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                    ],[
+                   InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+                   ],[
                    InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
-        
+   elif "scst" in query.data:
+       return await query.answer("""
+» HERE IS THE SOLUTION «
+
+☞ Send Me Rs.50/- Per Month With Payment Proof
+
+UPI 🆔 Details
+
+
+Gpay 📲 joynathnet4@oksbi
+Phonepe 📲 Soon...
+
+✔️ After Payment Verification Your ID Well Be Freed
+""", show_alert=True) 
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
