@@ -246,8 +246,9 @@ async def start(client, message):
                InlineKeyboardButton('🎬 TK HD HUB 🎬', url='https://t.me/+4yoDh0x8j80wOTVl'),
                InlineKeyboardButton('🎥 TK HP HUB 🎥', url='https://t.me/+oRO-NDOF4LU4ZjRl')
                ],[
-               InlineKeyboardButton('🗑 Close File', callback_data='close_data')
-               ]]
+               InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
+               ],[
+               InlineKeyboardButton('🗑 Close File', callback_data='close_data')]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
