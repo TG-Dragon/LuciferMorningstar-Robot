@@ -107,7 +107,7 @@ async def next_page(bot, query):
         )    
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Close 🗑️", callback_data="close_data")]
+             InlineKeyboardButton("Close 🗑️", callback_data="close")]
         )
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
@@ -927,7 +927,7 @@ async def auto_filter(client, msg, spoll=False):
         )    
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Close 🗑️", callback_data="close_data")]
+             InlineKeyboardButton("Close 🗑️", callback_data="close")]
         )
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
@@ -935,7 +935,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton("Close 🗑️", callback_data="close_data")]
+             InlineKeyboardButton("Close 🗑️", callback_data="close")]
         )
         btn.append(
                 [InlineKeyboardButton(text="🤖 Check Bot PM 🤖", url=f"https://t.me/{temp.U_NAME}")]
